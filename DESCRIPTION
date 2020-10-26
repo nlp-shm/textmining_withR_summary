@@ -1,0 +1,10 @@
+Package: placeholder
+Title: R4DSC summary and solutions
+Author: Shamsuddeen Hassan Muhammad
+Maintainer: Developer <shamsuddeeen2004@gmail.com>
+Description: This is a description. 
+Version: 0.0.1
+Imports: bookdown, xfun, rmarkdown
+Remotes: rstudio/bookdown
+License: GPL-2
+RoxygenNote: 6.0.1
