@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 TDF-IDF | Research Book</title>
   <meta name="description" content="This is my daily research book for analysis and documentation" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 TDF-IDF | Research Book" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Shamsuddeen Muhammad" />
 
 
-<meta name="date" content="2020-10-23" />
+<meta name="date" content="2020-10-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,8 +32,8 @@
   
   
 <link rel="prev" href="SA.html"/>
-
-<script src="libs/header-attrs-2.4/header-attrs.js"></script>
+<link rel="next" href="ngrams.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,7 +51,8 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -154,7 +155,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3" data-path="SA.html"><a href="SA.html"><i class="fa fa-check"></i><b>3</b> Sentiment Analysis</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="tidytext.html"><a href="tidytext.html#chapter-take-away"><i class="fa fa-check"></i><b>3.1</b> Chapter Take Away</a></li>
+<li class="chapter" data-level="3.1" data-path="SA.html"><a href="SA.html#chapter-take-away-1"><i class="fa fa-check"></i><b>3.1</b> Chapter Take Away</a></li>
 <li class="chapter" data-level="3.2" data-path="SA.html"><a href="SA.html#sentiment-analysis"><i class="fa fa-check"></i><b>3.2</b> Sentiment Analysis</a></li>
 <li class="chapter" data-level="" data-path="SA.html"><a href="SA.html#the-sentiments-dataset"><i class="fa fa-check"></i>2.1 The sentiments dataset</a></li>
 <li class="chapter" data-level="3.3" data-path="SA.html"><a href="SA.html#lexicon-package-not-in-the-book"><i class="fa fa-check"></i><b>3.3</b> Lexicon package not in the book</a></li>
@@ -166,12 +167,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="4" data-path="tf-idf.html"><a href="tf-idf.html"><i class="fa fa-check"></i><b>4</b> TDF-IDF</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="tidytext.html"><a href="tidytext.html#chapter-take-away"><i class="fa fa-check"></i><b>4.1</b> Chapter Take Away</a></li>
+<li class="chapter" data-level="4.1" data-path="tf-idf.html"><a href="tf-idf.html#chapter-take-away-2"><i class="fa fa-check"></i><b>4.1</b> Chapter Take Away</a></li>
 <li class="chapter" data-level="4.2" data-path="tf-idf.html"><a href="tf-idf.html#the-tidy-text-format"><i class="fa fa-check"></i><b>4.2</b> The tidy text format</a></li>
 <li class="chapter" data-level="" data-path="tf-idf.html"><a href="tf-idf.html#term-frequency-in-jane-austens-novels"><i class="fa fa-check"></i>3.1 Term frequency in Jane Austen’s novels</a></li>
 <li class="chapter" data-level="" data-path="tf-idf.html"><a href="tf-idf.html#zipfs-law"><i class="fa fa-check"></i>3.2 Zipf’s law</a></li>
 <li class="chapter" data-level="" data-path="tf-idf.html"><a href="tf-idf.html#the-bind_tf_idf-function"><i class="fa fa-check"></i>3.3 The bind_tf_idf function</a></li>
 <li class="chapter" data-level="" data-path="tf-idf.html"><a href="tf-idf.html#a-corpus-of-physics-texts"><i class="fa fa-check"></i>3.4 A corpus of physics texts</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="ngrams.html"><a href="ngrams.html"><i class="fa fa-check"></i><b>5</b> Relationships between words: n-grams and correlations</a>
+<ul>
+<li class="chapter" data-level="" data-path="ngrams.html"><a href="ngrams.html#chapter-take-away-3"><i class="fa fa-check"></i>Chapter Take Away</a></li>
+<li class="chapter" data-level="5.1" data-path="ngrams.html"><a href="ngrams.html#the-tidy-text-format-1"><i class="fa fa-check"></i><b>5.1</b> The tidy text format</a></li>
+<li class="chapter" data-level="" data-path="ngrams.html"><a href="ngrams.html#tokenizing-by-n-gram"><i class="fa fa-check"></i>4.1 Tokenizing by n-gram</a></li>
+<li class="chapter" data-level="" data-path="ngrams.html"><a href="ngrams.html#counting-and-filtering-n-grams"><i class="fa fa-check"></i>4.1.1 Counting and filtering n-grams</a>
+<ul>
+<li class="chapter" data-level="" data-path="ngrams.html"><a href="ngrams.html#finding-bigrams-n-2"><i class="fa fa-check"></i>Finding bigrams (n = 2)</a></li>
+<li class="chapter" data-level="" data-path="ngrams.html"><a href="ngrams.html#finding-trigam-n-3"><i class="fa fa-check"></i>Finding Trigam (n = 3)</a></li>
+<li class="chapter" data-level="" data-path="ngrams.html"><a href="ngrams.html#analyzing-bigrams"><i class="fa fa-check"></i>4.1.1 Analyzing bigrams</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ngrams.html"><a href="ngrams.html#using-bigrams-to-provide-context-in-sentiment-analysis"><i class="fa fa-check"></i>4.1.3 Using bigrams to provide context in sentiment analysis</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://www.shmuhammad.com/" target="blank">Find more summary of books I read preview_chapter(</a></li>
@@ -195,7 +209,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="tf-idf" class="section level1" number="4">
 <h1><span class="header-section-number">Chapter 4</span> TDF-IDF</h1>
-<div id="chapter-take-away" class="section level2" number="4.1">
+<div id="chapter-take-away-2" class="section level2" number="4.1">
 <h2><span class="header-section-number">4.1</span> Chapter Take Away</h2>
 <div class="note">
 <p><strong>Take away</strong></p>
@@ -210,11 +224,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="the-tidy-text-format" class="section level2" number="4.2">
 <h2><span class="header-section-number">4.2</span> The tidy text format</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="tf-idf.html#cb1-1"></a><span class="kw">library</span>(tidytext)</span>
-<span id="cb1-2"><a href="tf-idf.html#cb1-2"></a><span class="kw">library</span>(tidyverse)</span>
-<span id="cb1-3"><a href="tf-idf.html#cb1-3"></a><span class="kw">library</span>(janeaustenr)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="tf-idf.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidytext)</span>
+<span id="cb1-2"><a href="tf-idf.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="tf-idf.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janeaustenr)</span></code></pre></div>
 <p>One of the question in text mining and NLP is to find out what a document is about.</p>
-<p>Can we do this by looking at the words that make up the document? One measure of how important a word may be is its <strong>term frequency (tf), which shows how frequently a word occurs in a document</strong>. But, there may be some words that appears many times but may not be important; in English, these are probably words like “the”, “is”, “of”, and so forth.</p>
+<p>Can we do this by looking at the words that make up the document? One measure of how important a word may be is its <strong>term frequency (tf), which shows how frequently a word occurs in a document</strong>. But, there may be some words that appears many times but may not be important; in English, these are probably words like “the,” “is,” “of,” and so forth.</p>
 <p>We might think removing stop words in analysis, but stop words sometimes have more important than other words. Removing list of stop words is not a very sophisticated approach to adjusting term frequency for commonly used words.</p>
 <blockquote>
 <p>The common approach is to look at a term’s inverse document frequency (idf) - which decreases the weight for commonly used words and increases the weight for words that are not used very much in a collection of documents.
@@ -227,14 +241,14 @@ This can be combined with term frequency to calculate a term’s tf-idf (the two
 <p><img src="images/idf.png" /></p>
 <p>We can use tidy data principle, to perform <code>tf-idf</code> analysis to quantify how important various terms are in a document that is part of a collection.</p>
 </div>
-<div id="term-frequency-in-jane-austens-novels" class="section level2 unnumbered" number="">
+<div id="term-frequency-in-jane-austens-novels" class="section level2 unnumbered">
 <h2>3.1 Term frequency in Jane Austen’s novels</h2>
 <p>Let us find term frequency and then tf-idf of Jane Austen novels.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="tf-idf.html#cb2-1"></a>book_words &lt;-<span class="st"> </span><span class="kw">austen_books</span>() <span class="op">%&gt;%</span></span>
-<span id="cb2-2"><a href="tf-idf.html#cb2-2"></a><span class="st">  </span><span class="kw">unnest_tokens</span>(word, text) <span class="op">%&gt;%</span></span>
-<span id="cb2-3"><a href="tf-idf.html#cb2-3"></a><span class="st">  </span><span class="kw">count</span>(book, word, <span class="dt">sort =</span> <span class="ot">TRUE</span>)</span>
-<span id="cb2-4"><a href="tf-idf.html#cb2-4"></a></span>
-<span id="cb2-5"><a href="tf-idf.html#cb2-5"></a>book_words</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="tf-idf.html#cb2-1" aria-hidden="true" tabindex="-1"></a>book_words <span class="ot">&lt;-</span> <span class="fu">austen_books</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb2-2"><a href="tf-idf.html#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_tokens</span>(word, text) <span class="sc">%&gt;%</span></span>
+<span id="cb2-3"><a href="tf-idf.html#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(book, word, <span class="at">sort =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb2-4"><a href="tf-idf.html#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="tf-idf.html#cb2-5" aria-hidden="true" tabindex="-1"></a>book_words</span></code></pre></div>
 <pre><code>## # A tibble: 40,379 x 3
 ##    book              word      n
 ##    &lt;fct&gt;             &lt;chr&gt; &lt;int&gt;
@@ -249,11 +263,11 @@ This can be combined with term frequency to calculate a term’s tf-idf (the two
 ##  9 Emma              of     4291
 ## 10 Pride &amp; Prejudice to     4162
 ## # … with 40,369 more rows</code></pre>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="tf-idf.html#cb4-1"></a>total_words &lt;-<span class="st"> </span>book_words <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb4-2"><a href="tf-idf.html#cb4-2"></a><span class="st">  </span><span class="kw">group_by</span>(book) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb4-3"><a href="tf-idf.html#cb4-3"></a><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">total =</span> <span class="kw">sum</span>(n))</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="tf-idf.html#cb4-1" aria-hidden="true" tabindex="-1"></a>total_words <span class="ot">&lt;-</span> book_words <span class="sc">%&gt;%</span> </span>
+<span id="cb4-2"><a href="tf-idf.html#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(book) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-3"><a href="tf-idf.html#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">total =</span> <span class="fu">sum</span>(n))</span></code></pre></div>
 <pre><code>## `summarise()` ungrouping output (override with `.groups` argument)</code></pre>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="tf-idf.html#cb6-1"></a>total_words</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="tf-idf.html#cb6-1" aria-hidden="true" tabindex="-1"></a>total_words</span></code></pre></div>
 <pre><code>## # A tibble: 6 x 2
 ##   book                 total
 ##   &lt;fct&gt;                &lt;int&gt;
@@ -263,9 +277,9 @@ This can be combined with term frequency to calculate a term’s tf-idf (the two
 ## 4 Emma                160996
 ## 5 Northanger Abbey     77780
 ## 6 Persuasion           83658</code></pre>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="tf-idf.html#cb8-1"></a>book_words &lt;-<span class="st"> </span><span class="kw">left_join</span>(book_words, total_words)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="tf-idf.html#cb8-1" aria-hidden="true" tabindex="-1"></a>book_words <span class="ot">&lt;-</span> <span class="fu">left_join</span>(book_words, total_words)</span></code></pre></div>
 <pre><code>## Joining, by = &quot;book&quot;</code></pre>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="tf-idf.html#cb10-1"></a>book_words</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="tf-idf.html#cb10-1" aria-hidden="true" tabindex="-1"></a>book_words</span></code></pre></div>
 <pre><code>## # A tibble: 40,379 x 4
 ##    book              word      n  total
 ##    &lt;fct&gt;             &lt;chr&gt; &lt;int&gt;  &lt;int&gt;
@@ -284,19 +298,19 @@ This can be combined with term frequency to calculate a term’s tf-idf (the two
 <div id="term-frequency" class="section level4" number="4.2.0.1">
 <h4><span class="header-section-number">4.2.0.1</span> Term frequency</h4>
 <p>let’s look at the distribution of n/total for each novel, the number of times a word appears in a novel divided by the total number of terms (words) in that novel. <code>This is exactly what term frequency is</code>.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="tf-idf.html#cb12-1"></a><span class="kw">library</span>(ggplot2)</span>
-<span id="cb12-2"><a href="tf-idf.html#cb12-2"></a></span>
-<span id="cb12-3"><a href="tf-idf.html#cb12-3"></a><span class="kw">ggplot</span>(book_words, <span class="kw">aes</span>(n<span class="op">/</span>total, <span class="dt">fill =</span> book)) <span class="op">+</span></span>
-<span id="cb12-4"><a href="tf-idf.html#cb12-4"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">show.legend =</span> <span class="ot">FALSE</span>) <span class="op">+</span></span>
-<span id="cb12-5"><a href="tf-idf.html#cb12-5"></a><span class="st">  </span><span class="kw">xlim</span>(<span class="ot">NA</span>, <span class="fl">0.0009</span>) <span class="op">+</span></span>
-<span id="cb12-6"><a href="tf-idf.html#cb12-6"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span>book, <span class="dt">ncol =</span> <span class="dv">2</span>, <span class="dt">scales =</span> <span class="st">&quot;free_y&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="tf-idf.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb12-2"><a href="tf-idf.html#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="tf-idf.html#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(book_words, <span class="fu">aes</span>(n<span class="sc">/</span>total, <span class="at">fill =</span> book)) <span class="sc">+</span></span>
+<span id="cb12-4"><a href="tf-idf.html#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb12-5"><a href="tf-idf.html#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="cn">NA</span>, <span class="fl">0.0009</span>) <span class="sc">+</span></span>
+<span id="cb12-6"><a href="tf-idf.html#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>book, <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">scales =</span> <span class="st">&quot;free_y&quot;</span>)</span></code></pre></div>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 <pre><code>## Warning: Removed 896 rows containing non-finite values (stat_bin).</code></pre>
 <pre><code>## Warning: Removed 6 rows containing missing values (geom_bar).</code></pre>
 <p><img src="Reseach-Book_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <p>Term frequency in the table:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="tf-idf.html#cb16-1"></a>book_words &lt;-<span class="st"> </span>book_words <span class="op">%&gt;%</span><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">term_fre=</span>  n<span class="op">/</span>total)</span>
-<span id="cb16-2"><a href="tf-idf.html#cb16-2"></a>book_words</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="tf-idf.html#cb16-1" aria-hidden="true" tabindex="-1"></a>book_words <span class="ot">&lt;-</span> book_words <span class="sc">%&gt;%</span>  <span class="fu">mutate</span>(<span class="at">term_fre=</span>  n<span class="sc">/</span>total)</span>
+<span id="cb16-2"><a href="tf-idf.html#cb16-2" aria-hidden="true" tabindex="-1"></a>book_words</span></code></pre></div>
 <pre><code>## # A tibble: 40,379 x 5
 ##    book              word      n  total term_fre
 ##    &lt;fct&gt;             &lt;chr&gt; &lt;int&gt;  &lt;int&gt;    &lt;dbl&gt;
@@ -313,7 +327,7 @@ This can be combined with term frequency to calculate a term’s tf-idf (the two
 ## # … with 40,369 more rows</code></pre>
 </div>
 </div>
-<div id="zipfs-law" class="section level2 unnumbered" number="">
+<div id="zipfs-law" class="section level2 unnumbered">
 <h2>3.2 Zipf’s law</h2>
 <blockquote>
 <p>Given a large corpus of natural language occurrences, the frequency of any word is inversely proportional to its rank in frequency table.</p>
@@ -328,12 +342,12 @@ This can be combined with term frequency to calculate a term’s tf-idf (the two
 <p>I will apply Zips Law in Hausa Language here:</p>
 </div>
 <p>Now, we can examine Zipf’s law for Jane Austen’s novels with just a few lines of dplyr functions.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="tf-idf.html#cb18-1"></a>freq_by_rank &lt;-<span class="st"> </span>book_words <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb18-2"><a href="tf-idf.html#cb18-2"></a><span class="st">  </span><span class="kw">group_by</span>(book) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb18-3"><a href="tf-idf.html#cb18-3"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">rank =</span> <span class="kw">row_number</span>(), </span>
-<span id="cb18-4"><a href="tf-idf.html#cb18-4"></a>         <span class="st">`</span><span class="dt">term frequency</span><span class="st">`</span> =<span class="st"> </span>n<span class="op">/</span>total)</span>
-<span id="cb18-5"><a href="tf-idf.html#cb18-5"></a></span>
-<span id="cb18-6"><a href="tf-idf.html#cb18-6"></a>freq_by_rank</span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="tf-idf.html#cb18-1" aria-hidden="true" tabindex="-1"></a>freq_by_rank <span class="ot">&lt;-</span> book_words <span class="sc">%&gt;%</span> </span>
+<span id="cb18-2"><a href="tf-idf.html#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(book) <span class="sc">%&gt;%</span> </span>
+<span id="cb18-3"><a href="tf-idf.html#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rank =</span> <span class="fu">row_number</span>(), </span>
+<span id="cb18-4"><a href="tf-idf.html#cb18-4" aria-hidden="true" tabindex="-1"></a>         <span class="st">`</span><span class="at">term frequency</span><span class="st">`</span> <span class="ot">=</span> n<span class="sc">/</span>total)</span>
+<span id="cb18-5"><a href="tf-idf.html#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="tf-idf.html#cb18-6" aria-hidden="true" tabindex="-1"></a>freq_by_rank</span></code></pre></div>
 <pre><code>## # A tibble: 40,379 x 7
 ## # Groups:   book [6]
 ##    book              word      n  total term_fre  rank `term frequency`
@@ -351,15 +365,15 @@ This can be combined with term frequency to calculate a term’s tf-idf (the two
 ## # … with 40,369 more rows</code></pre>
 <p>The <code>rank</code> column here tells us the rank of each word within the frequency table; the table was already ordered by <code>n</code> so we could use row_number() to find the rank. Then, we can calculate the term frequency in the same way we did before.</p>
 <p>Zipf’s law is often visualized by plotting <code>rank</code> on the x-axis and term <code>frequency on the y-axis</code>, on logarithmic scales. Plotting this way, an inversely proportional relationship will have a constant, negative slope.</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="tf-idf.html#cb20-1"></a>freq_by_rank <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb20-2"><a href="tf-idf.html#cb20-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rank, <span class="st">`</span><span class="dt">term frequency</span><span class="st">`</span>, <span class="dt">color =</span> book)) <span class="op">+</span><span class="st"> </span></span>
-<span id="cb20-3"><a href="tf-idf.html#cb20-3"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">size =</span> <span class="fl">1.1</span>, <span class="dt">alpha =</span> <span class="fl">0.8</span>, <span class="dt">show.legend =</span> <span class="ot">FALSE</span>) <span class="op">+</span><span class="st"> </span></span>
-<span id="cb20-4"><a href="tf-idf.html#cb20-4"></a><span class="st">  </span><span class="kw">scale_x_log10</span>() <span class="op">+</span></span>
-<span id="cb20-5"><a href="tf-idf.html#cb20-5"></a><span class="st">  </span><span class="kw">scale_y_log10</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="tf-idf.html#cb20-1" aria-hidden="true" tabindex="-1"></a>freq_by_rank <span class="sc">%&gt;%</span> </span>
+<span id="cb20-2"><a href="tf-idf.html#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(rank, <span class="st">`</span><span class="at">term frequency</span><span class="st">`</span>, <span class="at">color =</span> book)) <span class="sc">+</span> </span>
+<span id="cb20-3"><a href="tf-idf.html#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">size =</span> <span class="fl">1.1</span>, <span class="at">alpha =</span> <span class="fl">0.8</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
+<span id="cb20-4"><a href="tf-idf.html#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb20-5"><a href="tf-idf.html#cb20-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_log10</span>()</span></code></pre></div>
 <p><img src="Reseach-Book_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <p>We see that all six of Jane Austen’s novels are similar to each other, and that the relationship between rank and frequency does have negative slope</p>
 </div>
-<div id="the-bind_tf_idf-function" class="section level2 unnumbered" number="">
+<div id="the-bind_tf_idf-function" class="section level2 unnumbered">
 <h2>3.3 The bind_tf_idf function</h2>
 <p>The idea of tf-idf is to find the important words for the content of each document by decreasing the weight for commonly used words and increasing the weight for words that are not used very much in a collection or corpus of documents.</p>
 <blockquote>
@@ -372,10 +386,10 @@ This can be combined with term frequency to calculate a term’s tf-idf (the two
 <li>one column contains the documents (book in this case), and</li>
 <li>the last necessary column contains the counts, how many times each document contains each term (n in this example).</li>
 </ul>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="tf-idf.html#cb21-1"></a>book_words &lt;-<span class="st"> </span>book_words <span class="op">%&gt;%</span></span>
-<span id="cb21-2"><a href="tf-idf.html#cb21-2"></a><span class="st">  </span><span class="kw">bind_tf_idf</span>(word, book, n)</span>
-<span id="cb21-3"><a href="tf-idf.html#cb21-3"></a></span>
-<span id="cb21-4"><a href="tf-idf.html#cb21-4"></a>book_words</span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="tf-idf.html#cb21-1" aria-hidden="true" tabindex="-1"></a>book_words <span class="ot">&lt;-</span> book_words <span class="sc">%&gt;%</span></span>
+<span id="cb21-2"><a href="tf-idf.html#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_tf_idf</span>(word, book, n)</span>
+<span id="cb21-3"><a href="tf-idf.html#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="tf-idf.html#cb21-4" aria-hidden="true" tabindex="-1"></a>book_words</span></code></pre></div>
 <pre><code>## # A tibble: 40,379 x 8
 ##    book              word      n  total term_fre     tf   idf tf_idf
 ##    &lt;fct&gt;             &lt;chr&gt; &lt;int&gt;  &lt;int&gt;    &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;
@@ -396,9 +410,9 @@ This can be combined with term frequency to calculate a term’s tf-idf (the two
 <p>The inverse document frequency will be a higher number for words that occur in fewer of the documents in the collection.</p>
 </blockquote>
 <p>Let’s look at terms with high tf-idf in Jane Austen’s works.</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="tf-idf.html#cb23-1"></a>book_words <span class="op">%&gt;%</span></span>
-<span id="cb23-2"><a href="tf-idf.html#cb23-2"></a><span class="st">  </span><span class="kw">select</span>(<span class="op">-</span>total) <span class="op">%&gt;%</span></span>
-<span id="cb23-3"><a href="tf-idf.html#cb23-3"></a><span class="st">  </span><span class="kw">arrange</span>(<span class="kw">desc</span>(tf_idf))</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="tf-idf.html#cb23-1" aria-hidden="true" tabindex="-1"></a>book_words <span class="sc">%&gt;%</span></span>
+<span id="cb23-2"><a href="tf-idf.html#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>total) <span class="sc">%&gt;%</span></span>
+<span id="cb23-3"><a href="tf-idf.html#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(tf_idf))</span></code></pre></div>
 <pre><code>## # A tibble: 40,379 x 7
 ##    book                word          n term_fre      tf   idf  tf_idf
 ##    &lt;fct&gt;               &lt;chr&gt;     &lt;int&gt;    &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;
@@ -418,24 +432,24 @@ This can be combined with term frequency to calculate a term’s tf-idf (the two
 <p>Note: Some of the values for idf are the same for different terms because there are 6 documents in this corpus and we are seeing the numerical value for ln(6/1),(6/2)</p>
 </blockquote>
 <p>Let’s look at a visualization for these high tf-idf words in Figure 3.4.</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="tf-idf.html#cb25-1"></a>book_words <span class="op">%&gt;%</span></span>
-<span id="cb25-2"><a href="tf-idf.html#cb25-2"></a><span class="st">  </span><span class="kw">arrange</span>(<span class="kw">desc</span>(tf_idf)) <span class="op">%&gt;%</span></span>
-<span id="cb25-3"><a href="tf-idf.html#cb25-3"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">word =</span> <span class="kw">factor</span>(word, <span class="dt">levels =</span> <span class="kw">rev</span>(<span class="kw">unique</span>(word)))) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb25-4"><a href="tf-idf.html#cb25-4"></a><span class="st">  </span><span class="kw">group_by</span>(book) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb25-5"><a href="tf-idf.html#cb25-5"></a><span class="st">  </span><span class="kw">top_n</span>(<span class="dv">15</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb25-6"><a href="tf-idf.html#cb25-6"></a><span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span></span>
-<span id="cb25-7"><a href="tf-idf.html#cb25-7"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(word, tf_idf, <span class="dt">fill =</span> book)) <span class="op">+</span></span>
-<span id="cb25-8"><a href="tf-idf.html#cb25-8"></a><span class="st">  </span><span class="kw">geom_col</span>(<span class="dt">show.legend =</span> <span class="ot">FALSE</span>) <span class="op">+</span></span>
-<span id="cb25-9"><a href="tf-idf.html#cb25-9"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="ot">NULL</span>, <span class="dt">y =</span> <span class="st">&quot;tf-idf&quot;</span>) <span class="op">+</span></span>
-<span id="cb25-10"><a href="tf-idf.html#cb25-10"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span>book, <span class="dt">ncol =</span> <span class="dv">2</span>, <span class="dt">scales =</span> <span class="st">&quot;free&quot;</span>) <span class="op">+</span></span>
-<span id="cb25-11"><a href="tf-idf.html#cb25-11"></a><span class="st">  </span><span class="kw">coord_flip</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="tf-idf.html#cb25-1" aria-hidden="true" tabindex="-1"></a>book_words <span class="sc">%&gt;%</span></span>
+<span id="cb25-2"><a href="tf-idf.html#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(tf_idf)) <span class="sc">%&gt;%</span></span>
+<span id="cb25-3"><a href="tf-idf.html#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">word =</span> <span class="fu">factor</span>(word, <span class="at">levels =</span> <span class="fu">rev</span>(<span class="fu">unique</span>(word)))) <span class="sc">%&gt;%</span> </span>
+<span id="cb25-4"><a href="tf-idf.html#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(book) <span class="sc">%&gt;%</span> </span>
+<span id="cb25-5"><a href="tf-idf.html#cb25-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">top_n</span>(<span class="dv">15</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb25-6"><a href="tf-idf.html#cb25-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb25-7"><a href="tf-idf.html#cb25-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(word, tf_idf, <span class="at">fill =</span> book)) <span class="sc">+</span></span>
+<span id="cb25-8"><a href="tf-idf.html#cb25-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb25-9"><a href="tf-idf.html#cb25-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">&quot;tf-idf&quot;</span>) <span class="sc">+</span></span>
+<span id="cb25-10"><a href="tf-idf.html#cb25-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>book, <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">scales =</span> <span class="st">&quot;free&quot;</span>) <span class="sc">+</span></span>
+<span id="cb25-11"><a href="tf-idf.html#cb25-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code></pre></div>
 <pre><code>## Selecting by tf_idf</code></pre>
 <p><img src="Reseach-Book_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <blockquote>
 <p>What measuring tf-idf has done here is show us that Jane Austen used similar language across her six novels, and what distinguishes one novel from the rest within the collection of her works are the proper nouns, the names of people and places. This is the point of tf-idf; it identifies words that are important to one document within a collection of documents.</p>
 </blockquote>
 </div>
-<div id="a-corpus-of-physics-texts" class="section level2 unnumbered" number="">
+<div id="a-corpus-of-physics-texts" class="section level2 unnumbered">
 <h2>3.4 A corpus of physics texts</h2>
 <p>Let’s work with another corpus of documents, to see what terms are important in a different set of works. We are going to use the following books</p>
 <ul>
@@ -444,17 +458,17 @@ This can be combined with term frequency to calculate a term’s tf-idf (the two
 <li>Experiments with Alternate Currents of High Potential and High Frequency by Nikola Tesla, and</li>
 <li>Relativity: The Special and General Theory by Albert Einstein.</li>
 </ul>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="tf-idf.html#cb27-1"></a><span class="kw">library</span>(gutenbergr)</span>
-<span id="cb27-2"><a href="tf-idf.html#cb27-2"></a></span>
-<span id="cb27-3"><a href="tf-idf.html#cb27-3"></a>physics &lt;-<span class="st"> </span><span class="kw">gutenberg_download</span>(<span class="kw">c</span>(<span class="dv">37729</span>, <span class="dv">14725</span>, <span class="dv">13476</span>, <span class="dv">30155</span>), </span>
-<span id="cb27-4"><a href="tf-idf.html#cb27-4"></a>                              <span class="dt">meta_fields =</span> <span class="st">&quot;author&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="tf-idf.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gutenbergr)</span>
+<span id="cb27-2"><a href="tf-idf.html#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="tf-idf.html#cb27-3" aria-hidden="true" tabindex="-1"></a>physics <span class="ot">&lt;-</span> <span class="fu">gutenberg_download</span>(<span class="fu">c</span>(<span class="dv">37729</span>, <span class="dv">14725</span>, <span class="dv">13476</span>, <span class="dv">30155</span>), </span>
+<span id="cb27-4"><a href="tf-idf.html#cb27-4" aria-hidden="true" tabindex="-1"></a>                              <span class="at">meta_fields =</span> <span class="st">&quot;author&quot;</span>)</span></code></pre></div>
 <pre><code>## Determining mirror for Project Gutenberg from http://www.gutenberg.org/robot/harvest</code></pre>
 <pre><code>## Using mirror http://aleph.gutenberg.org</code></pre>
 <p>Let use unnest the text</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="tf-idf.html#cb30-1"></a>physics_words &lt;-<span class="st">  </span>physics <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb30-2"><a href="tf-idf.html#cb30-2"></a><span class="st">  </span><span class="kw">unnest_tokens</span>(word , text) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb30-3"><a href="tf-idf.html#cb30-3"></a><span class="st">  </span><span class="kw">count</span>(author, word, <span class="dt">sort =</span> <span class="ot">TRUE</span>)</span>
-<span id="cb30-4"><a href="tf-idf.html#cb30-4"></a>physics_words</span></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="tf-idf.html#cb30-1" aria-hidden="true" tabindex="-1"></a>physics_words <span class="ot">&lt;-</span>  physics <span class="sc">%&gt;%</span> </span>
+<span id="cb30-2"><a href="tf-idf.html#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_tokens</span>(word , text) <span class="sc">%&gt;%</span> </span>
+<span id="cb30-3"><a href="tf-idf.html#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(author, word, <span class="at">sort =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb30-4"><a href="tf-idf.html#cb30-4" aria-hidden="true" tabindex="-1"></a>physics_words</span></code></pre></div>
 <pre><code>## # A tibble: 12,671 x 3
 ##    author              word      n
 ##    &lt;chr&gt;               &lt;chr&gt; &lt;int&gt;
@@ -470,16 +484,16 @@ This can be combined with term frequency to calculate a term’s tf-idf (the two
 ## 10 Tesla, Nikola       a      1176
 ## # … with 12,661 more rows</code></pre>
 <p>Let’s go ahead and calculate tf-idf, then visualize the high tf-idf words</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="tf-idf.html#cb32-1"></a>plot_physics &lt;-<span class="st">  </span>physics_words <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb32-2"><a href="tf-idf.html#cb32-2"></a><span class="st">   </span><span class="kw">bind_tf_idf</span>(word, author , n) <span class="op">%&gt;%</span><span class="st">  </span><span class="co"># author here is the document, word = tokens, n = number of each token</span></span>
-<span id="cb32-3"><a href="tf-idf.html#cb32-3"></a><span class="st">   </span><span class="kw">mutate</span>(<span class="dt">word =</span> <span class="kw">fct_reorder</span>(word, tf_idf)) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb32-4"><a href="tf-idf.html#cb32-4"></a><span class="st">    </span><span class="kw">mutate</span>(<span class="dt">author =</span> <span class="kw">factor</span>(author, <span class="dt">levels =</span> <span class="kw">c</span>(<span class="st">&quot;Galilei, Galileo&quot;</span>,</span>
-<span id="cb32-5"><a href="tf-idf.html#cb32-5"></a>                                            <span class="st">&quot;Huygens, Christiaan&quot;</span>, </span>
-<span id="cb32-6"><a href="tf-idf.html#cb32-6"></a>                                            <span class="st">&quot;Tesla, Nikola&quot;</span>,</span>
-<span id="cb32-7"><a href="tf-idf.html#cb32-7"></a>                                            <span class="st">&quot;Einstein, Albert&quot;</span>)))</span>
-<span id="cb32-8"><a href="tf-idf.html#cb32-8"></a></span>
-<span id="cb32-9"><a href="tf-idf.html#cb32-9"></a></span>
-<span id="cb32-10"><a href="tf-idf.html#cb32-10"></a>plot_physics</span></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="tf-idf.html#cb32-1" aria-hidden="true" tabindex="-1"></a>plot_physics <span class="ot">&lt;-</span>  physics_words <span class="sc">%&gt;%</span> </span>
+<span id="cb32-2"><a href="tf-idf.html#cb32-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">bind_tf_idf</span>(word, author , n) <span class="sc">%&gt;%</span>  <span class="co"># author here is the document, word = tokens, n = number of each token</span></span>
+<span id="cb32-3"><a href="tf-idf.html#cb32-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">mutate</span>(<span class="at">word =</span> <span class="fu">fct_reorder</span>(word, tf_idf)) <span class="sc">%&gt;%</span> </span>
+<span id="cb32-4"><a href="tf-idf.html#cb32-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">author =</span> <span class="fu">factor</span>(author, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;Galilei, Galileo&quot;</span>,</span>
+<span id="cb32-5"><a href="tf-idf.html#cb32-5" aria-hidden="true" tabindex="-1"></a>                                            <span class="st">&quot;Huygens, Christiaan&quot;</span>, </span>
+<span id="cb32-6"><a href="tf-idf.html#cb32-6" aria-hidden="true" tabindex="-1"></a>                                            <span class="st">&quot;Tesla, Nikola&quot;</span>,</span>
+<span id="cb32-7"><a href="tf-idf.html#cb32-7" aria-hidden="true" tabindex="-1"></a>                                            <span class="st">&quot;Einstein, Albert&quot;</span>)))</span>
+<span id="cb32-8"><a href="tf-idf.html#cb32-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-9"><a href="tf-idf.html#cb32-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-10"><a href="tf-idf.html#cb32-10" aria-hidden="true" tabindex="-1"></a>plot_physics</span></code></pre></div>
 <pre><code>## # A tibble: 12,671 x 6
 ##    author              word      n     tf   idf tf_idf
 ##    &lt;fct&gt;               &lt;fct&gt; &lt;int&gt;  &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;
@@ -494,21 +508,21 @@ This can be combined with term frequency to calculate a term’s tf-idf (the two
 ##  9 Huygens, Christiaan to     1207 0.0315     0      0
 ## 10 Tesla, Nikola       a      1176 0.0298     0      0
 ## # … with 12,661 more rows</code></pre>
-<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="tf-idf.html#cb34-1"></a>plot_physics <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb34-2"><a href="tf-idf.html#cb34-2"></a><span class="st">  </span><span class="kw">group_by</span>(author) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb34-3"><a href="tf-idf.html#cb34-3"></a><span class="st">  </span><span class="kw">top_n</span>(<span class="dv">15</span>, tf_idf) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb34-4"><a href="tf-idf.html#cb34-4"></a><span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span></span>
-<span id="cb34-5"><a href="tf-idf.html#cb34-5"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">word =</span> <span class="kw">reorder</span>(word, tf_idf)) <span class="op">%&gt;%</span></span>
-<span id="cb34-6"><a href="tf-idf.html#cb34-6"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(word, tf_idf, <span class="dt">fill =</span> author)) <span class="op">+</span></span>
-<span id="cb34-7"><a href="tf-idf.html#cb34-7"></a><span class="st">  </span><span class="kw">geom_col</span>(<span class="dt">show.legend =</span> <span class="ot">FALSE</span>) <span class="op">+</span></span>
-<span id="cb34-8"><a href="tf-idf.html#cb34-8"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="ot">NULL</span>, <span class="dt">y =</span> <span class="st">&quot;tf-idf&quot;</span>) <span class="op">+</span></span>
-<span id="cb34-9"><a href="tf-idf.html#cb34-9"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span>author, <span class="dt">ncol =</span> <span class="dv">2</span>, <span class="dt">scales =</span> <span class="st">&quot;free&quot;</span>) <span class="op">+</span></span>
-<span id="cb34-10"><a href="tf-idf.html#cb34-10"></a><span class="st">  </span><span class="kw">coord_flip</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="tf-idf.html#cb34-1" aria-hidden="true" tabindex="-1"></a>plot_physics <span class="sc">%&gt;%</span> </span>
+<span id="cb34-2"><a href="tf-idf.html#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(author) <span class="sc">%&gt;%</span> </span>
+<span id="cb34-3"><a href="tf-idf.html#cb34-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">top_n</span>(<span class="dv">15</span>, tf_idf) <span class="sc">%&gt;%</span> </span>
+<span id="cb34-4"><a href="tf-idf.html#cb34-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb34-5"><a href="tf-idf.html#cb34-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">word =</span> <span class="fu">reorder</span>(word, tf_idf)) <span class="sc">%&gt;%</span></span>
+<span id="cb34-6"><a href="tf-idf.html#cb34-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(word, tf_idf, <span class="at">fill =</span> author)) <span class="sc">+</span></span>
+<span id="cb34-7"><a href="tf-idf.html#cb34-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb34-8"><a href="tf-idf.html#cb34-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">&quot;tf-idf&quot;</span>) <span class="sc">+</span></span>
+<span id="cb34-9"><a href="tf-idf.html#cb34-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>author, <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">scales =</span> <span class="st">&quot;free&quot;</span>) <span class="sc">+</span></span>
+<span id="cb34-10"><a href="tf-idf.html#cb34-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code></pre></div>
 <p><img src="Reseach-Book_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 <p>Lets explore some strange word from the graph above. One thing we see here is “k” in the Einstein text?! Let us us the raw text and select what “K” means:</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="tf-idf.html#cb35-1"></a>physics <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb35-2"><a href="tf-idf.html#cb35-2"></a><span class="st">  </span><span class="kw">filter</span>(<span class="kw">str_detect</span>(text, <span class="st">&quot;_k_&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb35-3"><a href="tf-idf.html#cb35-3"></a><span class="st">  </span><span class="kw">select</span>(text)</span></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="tf-idf.html#cb35-1" aria-hidden="true" tabindex="-1"></a>physics <span class="sc">%&gt;%</span> </span>
+<span id="cb35-2"><a href="tf-idf.html#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(text, <span class="st">&quot;_k_&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb35-3"><a href="tf-idf.html#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(text)</span></code></pre></div>
 <pre><code>## # A tibble: 7 x 1
 ##   text                                                                  
 ##   &lt;chr&gt;                                                                 
@@ -520,10 +534,10 @@ This can be combined with term frequency to calculate a term’s tf-idf (the two
 ## 6 CO_oc_ in the crystal, when O_o_ has arrived at K_k_, because it forms
 ## 7 ρ is the average density of the matter and _k_ is a constant connected</code></pre>
 <p>Some cleaning up of the text may be in order. Also notice that there are separate “co” and “ordinate” items in the high tf-idf words for the Einstein text; the unnest_tokens() function separates around punctuation like hyphens by default. Notice that the tf-idf scores for “co” and “ordinate” are close to same!</p>
-<p>Again,“AB”, “RC”, and so forth are names of rays, circles, angles, and so forth for Huygens.</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="tf-idf.html#cb37-1"></a>physics <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb37-2"><a href="tf-idf.html#cb37-2"></a><span class="st">  </span><span class="kw">filter</span>(<span class="kw">str_detect</span>(text, <span class="st">&quot;RC&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb37-3"><a href="tf-idf.html#cb37-3"></a><span class="st">  </span><span class="kw">select</span>(text)</span></code></pre></div>
+<p>Again,“AB,” “RC,” and so forth are names of rays, circles, angles, and so forth for Huygens.</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="tf-idf.html#cb37-1" aria-hidden="true" tabindex="-1"></a>physics <span class="sc">%&gt;%</span> </span>
+<span id="cb37-2"><a href="tf-idf.html#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(text, <span class="st">&quot;RC&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb37-3"><a href="tf-idf.html#cb37-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(text)</span></code></pre></div>
 <pre><code>## # A tibble: 44 x 1
 ##    text                                                                  
 ##    &lt;chr&gt;                                                                 
@@ -539,31 +553,31 @@ This can be combined with term frequency to calculate a term’s tf-idf (the two
 ## 10 the ray _r_C is inclined equally with RC, the line C_d_ will          
 ## # … with 34 more rows</code></pre>
 <p>Let’s remove some of these less meaningful words to make a better, more meaningful plot. Notice that we make a custom list of stop words and use anti_join() to remove them; this is a flexible approach that can be used in many situations. We will need to go back a few steps since we are removing words from the tidy data frame.</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="tf-idf.html#cb39-1"></a>mystopwords &lt;-<span class="st"> </span><span class="kw">tibble</span>(<span class="dt">word =</span> <span class="kw">c</span>(<span class="st">&quot;eq&quot;</span>, <span class="st">&quot;co&quot;</span>, <span class="st">&quot;rc&quot;</span>, <span class="st">&quot;ac&quot;</span>, <span class="st">&quot;ak&quot;</span>, <span class="st">&quot;bn&quot;</span>, </span>
-<span id="cb39-2"><a href="tf-idf.html#cb39-2"></a>                                   <span class="st">&quot;fig&quot;</span>, <span class="st">&quot;file&quot;</span>, <span class="st">&quot;cg&quot;</span>, <span class="st">&quot;cb&quot;</span>, <span class="st">&quot;cm&quot;</span>,</span>
-<span id="cb39-3"><a href="tf-idf.html#cb39-3"></a>                               <span class="st">&quot;ab&quot;</span>, <span class="st">&quot;_k&quot;</span>, <span class="st">&quot;_k_&quot;</span>, <span class="st">&quot;_x&quot;</span>))</span>
-<span id="cb39-4"><a href="tf-idf.html#cb39-4"></a></span>
-<span id="cb39-5"><a href="tf-idf.html#cb39-5"></a>physics_words &lt;-<span class="st"> </span><span class="kw">anti_join</span>(physics_words, mystopwords, </span>
-<span id="cb39-6"><a href="tf-idf.html#cb39-6"></a>                           <span class="dt">by =</span> <span class="st">&quot;word&quot;</span>)</span>
-<span id="cb39-7"><a href="tf-idf.html#cb39-7"></a></span>
-<span id="cb39-8"><a href="tf-idf.html#cb39-8"></a>plot_physics &lt;-<span class="st"> </span>physics_words <span class="op">%&gt;%</span></span>
-<span id="cb39-9"><a href="tf-idf.html#cb39-9"></a><span class="st">  </span><span class="kw">bind_tf_idf</span>(word, author, n) <span class="op">%&gt;%</span></span>
-<span id="cb39-10"><a href="tf-idf.html#cb39-10"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">word =</span> <span class="kw">str_remove_all</span>(word, <span class="st">&quot;_&quot;</span>)) <span class="op">%&gt;%</span></span>
-<span id="cb39-11"><a href="tf-idf.html#cb39-11"></a><span class="st">  </span><span class="kw">group_by</span>(author) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb39-12"><a href="tf-idf.html#cb39-12"></a><span class="st">  </span><span class="kw">top_n</span>(<span class="dv">15</span>, tf_idf) <span class="op">%&gt;%</span></span>
-<span id="cb39-13"><a href="tf-idf.html#cb39-13"></a><span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span></span>
-<span id="cb39-14"><a href="tf-idf.html#cb39-14"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">word =</span> <span class="kw">reorder_within</span>(word, tf_idf, author)) <span class="op">%&gt;%</span></span>
-<span id="cb39-15"><a href="tf-idf.html#cb39-15"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">author =</span> <span class="kw">factor</span>(author, <span class="dt">levels =</span> <span class="kw">c</span>(<span class="st">&quot;Galilei, Galileo&quot;</span>,</span>
-<span id="cb39-16"><a href="tf-idf.html#cb39-16"></a>                                            <span class="st">&quot;Huygens, Christiaan&quot;</span>,</span>
-<span id="cb39-17"><a href="tf-idf.html#cb39-17"></a>                                            <span class="st">&quot;Tesla, Nikola&quot;</span>,</span>
-<span id="cb39-18"><a href="tf-idf.html#cb39-18"></a>                                            <span class="st">&quot;Einstein, Albert&quot;</span>)))</span>
-<span id="cb39-19"><a href="tf-idf.html#cb39-19"></a></span>
-<span id="cb39-20"><a href="tf-idf.html#cb39-20"></a><span class="kw">ggplot</span>(plot_physics, <span class="kw">aes</span>(word, tf_idf, <span class="dt">fill =</span> author)) <span class="op">+</span></span>
-<span id="cb39-21"><a href="tf-idf.html#cb39-21"></a><span class="st">  </span><span class="kw">geom_col</span>(<span class="dt">show.legend =</span> <span class="ot">FALSE</span>) <span class="op">+</span></span>
-<span id="cb39-22"><a href="tf-idf.html#cb39-22"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="ot">NULL</span>, <span class="dt">y =</span> <span class="st">&quot;tf-idf&quot;</span>) <span class="op">+</span></span>
-<span id="cb39-23"><a href="tf-idf.html#cb39-23"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span>author, <span class="dt">ncol =</span> <span class="dv">2</span>, <span class="dt">scales =</span> <span class="st">&quot;free&quot;</span>) <span class="op">+</span></span>
-<span id="cb39-24"><a href="tf-idf.html#cb39-24"></a><span class="st">  </span><span class="kw">coord_flip</span>() <span class="op">+</span></span>
-<span id="cb39-25"><a href="tf-idf.html#cb39-25"></a><span class="st">  </span><span class="kw">scale_x_reordered</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="tf-idf.html#cb39-1" aria-hidden="true" tabindex="-1"></a>mystopwords <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">word =</span> <span class="fu">c</span>(<span class="st">&quot;eq&quot;</span>, <span class="st">&quot;co&quot;</span>, <span class="st">&quot;rc&quot;</span>, <span class="st">&quot;ac&quot;</span>, <span class="st">&quot;ak&quot;</span>, <span class="st">&quot;bn&quot;</span>, </span>
+<span id="cb39-2"><a href="tf-idf.html#cb39-2" aria-hidden="true" tabindex="-1"></a>                                   <span class="st">&quot;fig&quot;</span>, <span class="st">&quot;file&quot;</span>, <span class="st">&quot;cg&quot;</span>, <span class="st">&quot;cb&quot;</span>, <span class="st">&quot;cm&quot;</span>,</span>
+<span id="cb39-3"><a href="tf-idf.html#cb39-3" aria-hidden="true" tabindex="-1"></a>                               <span class="st">&quot;ab&quot;</span>, <span class="st">&quot;_k&quot;</span>, <span class="st">&quot;_k_&quot;</span>, <span class="st">&quot;_x&quot;</span>))</span>
+<span id="cb39-4"><a href="tf-idf.html#cb39-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-5"><a href="tf-idf.html#cb39-5" aria-hidden="true" tabindex="-1"></a>physics_words <span class="ot">&lt;-</span> <span class="fu">anti_join</span>(physics_words, mystopwords, </span>
+<span id="cb39-6"><a href="tf-idf.html#cb39-6" aria-hidden="true" tabindex="-1"></a>                           <span class="at">by =</span> <span class="st">&quot;word&quot;</span>)</span>
+<span id="cb39-7"><a href="tf-idf.html#cb39-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-8"><a href="tf-idf.html#cb39-8" aria-hidden="true" tabindex="-1"></a>plot_physics <span class="ot">&lt;-</span> physics_words <span class="sc">%&gt;%</span></span>
+<span id="cb39-9"><a href="tf-idf.html#cb39-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_tf_idf</span>(word, author, n) <span class="sc">%&gt;%</span></span>
+<span id="cb39-10"><a href="tf-idf.html#cb39-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">word =</span> <span class="fu">str_remove_all</span>(word, <span class="st">&quot;_&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb39-11"><a href="tf-idf.html#cb39-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(author) <span class="sc">%&gt;%</span> </span>
+<span id="cb39-12"><a href="tf-idf.html#cb39-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">top_n</span>(<span class="dv">15</span>, tf_idf) <span class="sc">%&gt;%</span></span>
+<span id="cb39-13"><a href="tf-idf.html#cb39-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb39-14"><a href="tf-idf.html#cb39-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">word =</span> <span class="fu">reorder_within</span>(word, tf_idf, author)) <span class="sc">%&gt;%</span></span>
+<span id="cb39-15"><a href="tf-idf.html#cb39-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">author =</span> <span class="fu">factor</span>(author, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;Galilei, Galileo&quot;</span>,</span>
+<span id="cb39-16"><a href="tf-idf.html#cb39-16" aria-hidden="true" tabindex="-1"></a>                                            <span class="st">&quot;Huygens, Christiaan&quot;</span>,</span>
+<span id="cb39-17"><a href="tf-idf.html#cb39-17" aria-hidden="true" tabindex="-1"></a>                                            <span class="st">&quot;Tesla, Nikola&quot;</span>,</span>
+<span id="cb39-18"><a href="tf-idf.html#cb39-18" aria-hidden="true" tabindex="-1"></a>                                            <span class="st">&quot;Einstein, Albert&quot;</span>)))</span>
+<span id="cb39-19"><a href="tf-idf.html#cb39-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-20"><a href="tf-idf.html#cb39-20" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(plot_physics, <span class="fu">aes</span>(word, tf_idf, <span class="at">fill =</span> author)) <span class="sc">+</span></span>
+<span id="cb39-21"><a href="tf-idf.html#cb39-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb39-22"><a href="tf-idf.html#cb39-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">&quot;tf-idf&quot;</span>) <span class="sc">+</span></span>
+<span id="cb39-23"><a href="tf-idf.html#cb39-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>author, <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">scales =</span> <span class="st">&quot;free&quot;</span>) <span class="sc">+</span></span>
+<span id="cb39-24"><a href="tf-idf.html#cb39-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb39-25"><a href="tf-idf.html#cb39-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_reordered</span>()</span></code></pre></div>
 <p><img src="Reseach-Book_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
 
 </div>
@@ -573,8 +587,8 @@ This can be combined with term frequency to calculate a term’s tf-idf (the two
           </div>
         </div>
       </div>
-<a href="SA.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="SA.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ngrams.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

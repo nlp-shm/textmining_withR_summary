@@ -3,7 +3,7 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./"> My PhD Research Book</a></li>
+        <li><a href="./"> Text Mining with R summary </a></li>
       after: |
         <li><a href="https://www.shmuhammad.com/" target="blank">Find more summary of books I read preview_chapter(</a></li>
     download: ["pdf", "epub"]

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 5 The tidy text format | Research Book</title>
+  <title>Chapter 3 The tidy text format | Research Book</title>
   <meta name="description" content="This is my daily research book for analysis and documentation" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 5 The tidy text format | Research Book" />
+  <meta property="og:title" content="Chapter 3 The tidy text format | Research Book" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 The tidy text format | Research Book" />
+  <meta name="twitter:title" content="Chapter 3 The tidy text format | Research Book" />
   
   <meta name="twitter:description" content="This is my daily research book for analysis and documentation" />
   
@@ -24,16 +24,16 @@
 <meta name="author" content="Shamsuddeen Muhammad" />
 
 
-<meta name="date" content="2020-10-22" />
+<meta name="date" content="2020-10-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="tf-idf.html"/>
+<link rel="prev" href="tidytext.html"/>
 
-<script src="libs/header-attrs-2.4/header-attrs.js"></script>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,7 +51,8 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -138,37 +139,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="tidytext.html"><a href="tidytext.html"><i class="fa fa-check"></i><b>2</b> Tidy text format</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="tidytext.html"><a href="tidytext.html#chapter-take-away"><i class="fa fa-check"></i><b>2.1</b> Chapter Take Away</a></li>
-<li class="chapter" data-level="" data-path="tidytext.html"><a href="tidytext.html#contrasting-tidy-text-with-other-data-structures"><i class="fa fa-check"></i>1.1 Contrasting tidy text with other data structures</a></li>
-<li class="chapter" data-level="" data-path="tidytext.html"><a href="tidytext.html#the-unnest_tokens-function"><i class="fa fa-check"></i>1.2 The unnest_tokens function</a>
+</ul></li>
+<li class="chapter" data-level="3" data-path="the-tidy-text-format.html"><a href="the-tidy-text-format.html"><i class="fa fa-check"></i><b>3</b> The tidy text format</a>
 <ul>
-<li class="chapter" data-level="2.1.1" data-path="tidytext.html"><a href="tidytext.html#sentences"><i class="fa fa-check"></i><b>2.1.1</b> Sentences</a></li>
-<li class="chapter" data-level="2.1.2" data-path="tidytext.html"><a href="tidytext.html#word"><i class="fa fa-check"></i><b>2.1.2</b> Word</a></li>
-<li class="chapter" data-level="2.1.3" data-path="tidytext.html"><a href="tidytext.html#chapter"><i class="fa fa-check"></i><b>2.1.3</b> Chapter</a></li>
-<li class="chapter" data-level="2.1.4" data-path="tidytext.html"><a href="tidytext.html#by-n-gram"><i class="fa fa-check"></i><b>2.1.4</b> By n-gram</a></li>
-<li class="chapter" data-level="2.1.5" data-path="tidytext.html"><a href="tidytext.html#tri-gram"><i class="fa fa-check"></i><b>2.1.5</b> tri-gram</a></li>
-<li class="chapter" data-level="2.1.6" data-path="tidytext.html"><a href="tidytext.html#character_-shingles-defined-character"><i class="fa fa-check"></i><b>2.1.6</b> character_ shingles : Defined character</a></li>
+<li class="chapter" data-level="" data-path="the-tidy-text-format.html"><a href="the-tidy-text-format.html#contrasting-tidy-text-with-other-data-structures"><i class="fa fa-check"></i>1.1 Contrasting tidy text with other data structures</a></li>
+<li class="chapter" data-level="" data-path="the-tidy-text-format.html"><a href="the-tidy-text-format.html#the-unnest_tokens-function"><i class="fa fa-check"></i>1.2 The unnest_tokens function</a></li>
+<li class="chapter" data-level="" data-path="the-tidy-text-format.html"><a href="the-tidy-text-format.html#tidying-the-works-of-jane-austen"><i class="fa fa-check"></i>1.3 Tidying the works of Jane Austen</a></li>
+<li class="chapter" data-level="" data-path="the-tidy-text-format.html"><a href="the-tidy-text-format.html#the-gutenbergr-package"><i class="fa fa-check"></i>1.4 The gutenbergr package</a></li>
+<li class="chapter" data-level="" data-path="the-tidy-text-format.html"><a href="the-tidy-text-format.html#word-frequencies"><i class="fa fa-check"></i>1.5 Word frequencies</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="tidytext.html"><a href="tidytext.html#tidying-the-works-of-jane-austen"><i class="fa fa-check"></i>1.3 Tidying the works of Jane Austen</a></li>
-<li class="chapter" data-level="" data-path="tidytext.html"><a href="tidytext.html#the-gutenbergr-package"><i class="fa fa-check"></i>1.4 The gutenbergr package</a></li>
-<li class="chapter" data-level="" data-path="tidytext.html"><a href="tidytext.html#word-frequencies"><i class="fa fa-check"></i>1.5 Word frequencies</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="SA.html"><a href="SA.html"><i class="fa fa-check"></i><b>3</b> Sentiment Analysis</a>
-<ul>
-<li class="chapter" data-level="3.1" data-path="tidytext.html"><a href="tidytext.html#chapter-take-away"><i class="fa fa-check"></i><b>3.1</b> Chapter Take Away</a></li>
-<li class="chapter" data-level="3.2" data-path="SA.html"><a href="SA.html#sentiment-analysis"><i class="fa fa-check"></i><b>3.2</b> Sentiment Analysis</a></li>
-<li class="chapter" data-level="" data-path="SA.html"><a href="SA.html#the-sentiments-dataset"><i class="fa fa-check"></i>2.1 The sentiments dataset</a></li>
-<li class="chapter" data-level="3.3" data-path="SA.html"><a href="SA.html#lexicon-package-not-in-the-book"><i class="fa fa-check"></i><b>3.3</b> Lexicon package not in the book</a></li>
-<li class="chapter" data-level="" data-path="SA.html"><a href="SA.html#sentiment-analysis-with-inner-join"><i class="fa fa-check"></i>2.2 Sentiment analysis with inner join</a></li>
-<li class="chapter" data-level="" data-path="SA.html"><a href="SA.html#comparing-the-three-sentiment-dictionaries"><i class="fa fa-check"></i>2.3 Comparing the three sentiment dictionaries</a></li>
-<li class="chapter" data-level="" data-path="SA.html"><a href="SA.html#most-common-positive-and-negative-words"><i class="fa fa-check"></i>2.4 Most common positive and negative words</a></li>
-<li class="chapter" data-level="" data-path="SA.html"><a href="SA.html#wordclouds"><i class="fa fa-check"></i>2.5 Wordclouds</a></li>
-<li class="chapter" data-level="" data-path="SA.html"><a href="SA.html#looking-at-units-beyond-just-words"><i class="fa fa-check"></i>2.6 Looking at units beyond just words</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="tf-idf.html"><a href="tf-idf.html"><i class="fa fa-check"></i><b>4</b> TDF-IDF</a>
-<ul>
-<li class="chapter" data-level="4.1" data-path="tidytext.html"><a href="tidytext.html#chapter-take-away"><i class="fa fa-check"></i><b>4.1</b> Chapter Take Away</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="the-tidy-text-format.html"><a href="the-tidy-text-format.html"><i class="fa fa-check"></i><b>5</b> The tidy text format</a></li>
 <li class="divider"></li>
 <li><a href="https://www.shmuhammad.com/" target="blank">Find more summary of books I read preview_chapter(</a></li>
 
@@ -189,30 +168,377 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="the-tidy-text-format" class="section level1" number="5">
-<h1><span class="header-section-number">Chapter 5</span> The tidy text format</h1>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="the-tidy-text-format.html#cb1-1"></a><span class="kw">library</span>(tidytext)</span>
-<span id="cb1-2"><a href="the-tidy-text-format.html#cb1-2"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
-<p>One of the question in text mining and NLP is to find out what a document is about.</p>
-<p>Can we do this by looking at the words that make up the document? One measure of how important a word may be is its <strong>term frequency (tf), which shows how frequently a word occurs in a document</strong>. But, there may be some words that appears many times but may not be important; in English, these are probably words like “the”, “is”, “of”, and so forth.</p>
-<p>We might think removing stop words in analysis, but stop words sometimes have more important than other words. A list of stop words is not a very sophisticated approach to adjusting term frequency for commonly used words.</p>
-<blockquote>
-<p>Another approach is to look at a term’s inverse document frequency (idf) - which decreases the weight for commonly used words and increases the weight for words that are not used very much in a collection of documents.
-This can be combined with term frequency to calculate a term’s tf-idf (the two quantities multiplied together), the frequency of a term adjusted for how rarely it is used.</p>
-</blockquote>
-<div class="note">
-<p>The statistic tf-idf is intended to measure how important a word is to a document in a collection (or corpus) of documents, for example, to one novel in a collection of novels or to one website in a collection of websites</p>
+<div id="the-tidy-text-format" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> The tidy text format</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="the-tidy-text-format.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidytext)</span>
+<span id="cb1-2"><a href="the-tidy-text-format.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
+<div id="contrasting-tidy-text-with-other-data-structures" class="section level2 unnumbered">
+<h2>1.1 Contrasting tidy text with other data structures</h2>
+<p>A tidy text format is a table with one-token-per-row. Structuring text data in this way means that it conforms to tidy data principles and can be manipulated with a set of consistent tools.</p>
+<p>Tidytext is different from the way other data structure is organized (e.g text, Corpus, and Document-term matrix).</p>
 </div>
-<p>It is a rule-of-thumb or heuristic quantity; while it has proved useful in text mining, search engines, etc., its theoretical foundations are considered less than firm by information theory experts</p>
-<p><img src="/Textmining_with_R/03-tf-idf_files/idf.png" /></p>
+<div id="the-unnest_tokens-function" class="section level2 unnumbered">
+<h2>1.2 The unnest_tokens function</h2>
+<p>The unnest function allow us to</p>
+<p>Example: Given the text below, change it to tidytext:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="the-tidy-text-format.html#cb2-1" aria-hidden="true" tabindex="-1"></a>text <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Because I could not stop for Death -&quot;</span>,</span>
+<span id="cb2-2"><a href="the-tidy-text-format.html#cb2-2" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;He kindly stopped for me -&quot;</span>,</span>
+<span id="cb2-3"><a href="the-tidy-text-format.html#cb2-3" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;The Carriage held but just Ourselves -&quot;</span>,</span>
+<span id="cb2-4"><a href="the-tidy-text-format.html#cb2-4" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;and Immortality&quot;</span>)</span></code></pre></div>
+<p>Before chaning <code>text</code> to tidytext format, we need to change it to dataframe first:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="the-tidy-text-format.html#cb3-1" aria-hidden="true" tabindex="-1"></a>text_df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">line =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">text =</span> text)</span>
+<span id="cb3-2"><a href="the-tidy-text-format.html#cb3-2" aria-hidden="true" tabindex="-1"></a>text_df</span></code></pre></div>
+<pre><code>## # A tibble: 4 x 2
+##    line text                                  
+##   &lt;int&gt; &lt;chr&gt;                                 
+## 1     1 Because I could not stop for Death -  
+## 2     2 He kindly stopped for me -            
+## 3     3 The Carriage held but just Ourselves -
+## 4     4 and Immortality</code></pre>
+<p>To chnage <code>text</code> to be use for tidy text analysis, we need to convert this so that it has <code>one-token-per-document-per-row</code> using <code>unnest_tokens</code> functions as shown below:</p>
+<div class="note">
+<p><strong>unnest_tokens</strong>_</p>
+<p>Split a column into tokens using the tokenizers package, splitting the table into one-token-per-row. This function supports non-standard evaluation through the tidyeval framework.</p>
+</div>
+<p>So, we change it to tidy text format below:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="the-tidy-text-format.html#cb5-1" aria-hidden="true" tabindex="-1"></a>text_df <span class="sc">%&gt;%</span></span>
+<span id="cb5-2"><a href="the-tidy-text-format.html#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_tokens</span>(word, text) <span class="co"># word is name of the output column (word in this case) and text is the column where the data is coming from (text_df, has column with the data)</span></span></code></pre></div>
+<pre><code>## # A tibble: 20 x 2
+##     line word       
+##    &lt;int&gt; &lt;chr&gt;      
+##  1     1 because    
+##  2     1 i          
+##  3     1 could      
+##  4     1 not        
+##  5     1 stop       
+##  6     1 for        
+##  7     1 death      
+##  8     2 he         
+##  9     2 kindly     
+## 10     2 stopped    
+## 11     2 for        
+## 12     2 me         
+## 13     3 the        
+## 14     3 carriage   
+## 15     3 held       
+## 16     3 but        
+## 17     3 just       
+## 18     3 ourselves  
+## 19     4 and        
+## 20     4 immortality</code></pre>
+<p>Now, we’ve split each row so that there is one token (word) in each row of the new data frame; the default tokenization in <code>unnest_tokens()</code> is for <code>single words</code>, but there is other such as ngrams,sentences, lines, character_ shingles and regex.</p>
+<p>From tibble above, we can see that:</p>
+<ul>
+<li><p>Other columns, such as the line number each word came from, are retained.</p></li>
+<li><p>Punctuation has been stripped.</p></li>
+<li><p>By default, <code>unnest_tokens()</code> converts the tokens to lowercase, which makes them easier to compare or combine with other datasets. (Use the to_lower = FALSE argument to turn off this behavior).</p></li>
+</ul>
+<div class="note">
+<p>Examples of using the unnest functions:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="the-tidy-text-format.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janeaustenr)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="the-tidy-text-format.html#cb8-1" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">txt =</span> prideprejudice)</span></code></pre></div>
+<div id="sentences" class="section level3" number="3.0.1">
+<h3><span class="header-section-number">3.0.1</span> Sentences</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="the-tidy-text-format.html#cb9-1" aria-hidden="true" tabindex="-1"></a>d <span class="sc">%&gt;%</span></span>
+<span id="cb9-2"><a href="the-tidy-text-format.html#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_tokens</span>(sentence, txt, <span class="at">token =</span> <span class="st">&quot;sentences&quot;</span>)</span></code></pre></div>
+<pre><code>## # A tibble: 7,066 x 1
+##    sentence                                                                                  
+##    &lt;chr&gt;                                                                                     
+##  1 &quot;pride and prejudice  by jane austen    chapter 1   it is a truth universally acknowledge…
+##  2 &quot;however little known the feelings or views of such a man may be on his first entering a …
+##  3 &quot;\&quot;my dear mr.&quot;                                                                           
+##  4 &quot;bennet,\&quot; said his lady to him one day, \&quot;have you heard that netherfield park is let at…
+##  5 &quot;mr.&quot;                                                                                     
+##  6 &quot;bennet replied that he had not.&quot;                                                         
+##  7 &quot;\&quot;but it is,\&quot; returned she; \&quot;for mrs.&quot;                                                 
+##  8 &quot;long has just been here, and she told me all about it.\&quot;&quot;                                
+##  9 &quot;mr.&quot;                                                                                     
+## 10 &quot;bennet made no answer.&quot;                                                                  
+## # … with 7,056 more rows</code></pre>
+</div>
+<div id="word" class="section level3" number="3.0.2">
+<h3><span class="header-section-number">3.0.2</span> Word</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="the-tidy-text-format.html#cb11-1" aria-hidden="true" tabindex="-1"></a>d <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a href="the-tidy-text-format.html#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_tokens</span>(word, txt)</span></code></pre></div>
+<pre><code>## # A tibble: 122,204 x 1
+##    word     
+##    &lt;chr&gt;    
+##  1 pride    
+##  2 and      
+##  3 prejudice
+##  4 by       
+##  5 jane     
+##  6 austen   
+##  7 chapter  
+##  8 1        
+##  9 it       
+## 10 is       
+## # … with 122,194 more rows</code></pre>
+</div>
+<div id="chapter" class="section level3" number="3.0.3">
+<h3><span class="header-section-number">3.0.3</span> Chapter</h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="the-tidy-text-format.html#cb13-1" aria-hidden="true" tabindex="-1"></a>d <span class="sc">%&gt;%</span></span>
+<span id="cb13-2"><a href="the-tidy-text-format.html#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_tokens</span>(chapter, txt, <span class="at">token =</span> <span class="st">&quot;regex&quot;</span>, <span class="at">pattern =</span> <span class="st">&quot;Chapter [</span><span class="sc">\\\\</span><span class="st">d]&quot;</span>)</span></code></pre></div>
+<pre><code>## # A tibble: 1 x 1
+##   chapter                                                                                    
+##   &lt;chr&gt;                                                                                      
+## 1 &quot;pride and prejudice\n\nby jane austen\n\n\n\nchapter 1\n\n\nit is a truth universally ack…</code></pre>
+</div>
+<div id="by-n-gram" class="section level3" number="3.0.4">
+<h3><span class="header-section-number">3.0.4</span> By n-gram</h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="the-tidy-text-format.html#cb15-1" aria-hidden="true" tabindex="-1"></a>d <span class="sc">%&gt;%</span></span>
+<span id="cb15-2"><a href="the-tidy-text-format.html#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_tokens</span>(ngram, txt, <span class="at">token =</span> <span class="st">&quot;ngrams&quot;</span>, <span class="at">n =</span> <span class="dv">2</span>)</span></code></pre></div>
+<pre><code>## # A tibble: 122,203 x 1
+##    ngram         
+##    &lt;chr&gt;         
+##  1 pride and     
+##  2 and prejudice 
+##  3 prejudice by  
+##  4 by jane       
+##  5 jane austen   
+##  6 austen chapter
+##  7 chapter 1     
+##  8 1 it          
+##  9 it is         
+## 10 is a          
+## # … with 122,193 more rows</code></pre>
+</div>
+<div id="tri-gram" class="section level3" number="3.0.5">
+<h3><span class="header-section-number">3.0.5</span> tri-gram</h3>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="the-tidy-text-format.html#cb17-1" aria-hidden="true" tabindex="-1"></a>d <span class="sc">%&gt;%</span></span>
+<span id="cb17-2"><a href="the-tidy-text-format.html#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_tokens</span>(ngram, txt, <span class="at">token =</span> <span class="st">&quot;ngrams&quot;</span>, <span class="at">n =</span> <span class="dv">3</span>)</span></code></pre></div>
+<pre><code>## # A tibble: 122,202 x 1
+##    ngram              
+##    &lt;chr&gt;              
+##  1 pride and prejudice
+##  2 and prejudice by   
+##  3 prejudice by jane  
+##  4 by jane austen     
+##  5 jane austen chapter
+##  6 austen chapter 1   
+##  7 chapter 1 it       
+##  8 1 it is            
+##  9 it is a            
+## 10 is a truth         
+## # … with 122,192 more rows</code></pre>
+</div>
+<div id="character_-shingles-defined-character" class="section level3" number="3.0.6">
+<h3><span class="header-section-number">3.0.6</span> character_ shingles : Defined character</h3>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="the-tidy-text-format.html#cb19-1" aria-hidden="true" tabindex="-1"></a>d <span class="sc">%&gt;%</span></span>
+<span id="cb19-2"><a href="the-tidy-text-format.html#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_tokens</span>(shingle, txt, <span class="at">token =</span> <span class="st">&quot;character_shingles&quot;</span>, <span class="at">n =</span> <span class="dv">4</span>)</span></code></pre></div>
+<pre><code>## # A tibble: 536,526 x 1
+##    shingle
+##    &lt;chr&gt;  
+##  1 prid   
+##  2 ride   
+##  3 idea   
+##  4 dean   
+##  5 eand   
+##  6 andp   
+##  7 ndpr   
+##  8 dpre   
+##  9 prej   
+## 10 reju   
+## # … with 536,516 more rows</code></pre>
+</div>
+</div>
+<div class="figure">
+<img src="/Textmining_with_R/01-intro_files/tidytex1.png" alt="" />
+<p class="caption">Tidytext concept</p>
+</div>
+</div>
+<div id="tidying-the-works-of-jane-austen" class="section level2 unnumbered">
+<h2>1.3 Tidying the works of Jane Austen</h2>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="the-tidy-text-format.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janeaustenr)</span>
+<span id="cb21-2"><a href="the-tidy-text-format.html#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb21-3"><a href="the-tidy-text-format.html#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb21-4"><a href="the-tidy-text-format.html#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-5"><a href="the-tidy-text-format.html#cb21-5" aria-hidden="true" tabindex="-1"></a>original_books <span class="ot">&lt;-</span> <span class="fu">austen_books</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb21-6"><a href="the-tidy-text-format.html#cb21-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(book) <span class="sc">%&gt;%</span></span>
+<span id="cb21-7"><a href="the-tidy-text-format.html#cb21-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">linenumber =</span> <span class="fu">row_number</span>(),</span>
+<span id="cb21-8"><a href="the-tidy-text-format.html#cb21-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">chapter =</span> <span class="fu">cumsum</span>(<span class="fu">str_detect</span>(text, <span class="fu">regex</span>(<span class="st">&quot;^chapter [</span><span class="sc">\\</span><span class="st">divxlc]&quot;</span>,</span>
+<span id="cb21-9"><a href="the-tidy-text-format.html#cb21-9" aria-hidden="true" tabindex="-1"></a>                                                 <span class="at">ignore_case =</span> <span class="cn">TRUE</span>)))) <span class="sc">%&gt;%</span></span>
+<span id="cb21-10"><a href="the-tidy-text-format.html#cb21-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb21-11"><a href="the-tidy-text-format.html#cb21-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-12"><a href="the-tidy-text-format.html#cb21-12" aria-hidden="true" tabindex="-1"></a>original_books</span></code></pre></div>
+<pre><code>## # A tibble: 73,422 x 4
+##    text                    book                linenumber chapter
+##    &lt;chr&gt;                   &lt;fct&gt;                    &lt;int&gt;   &lt;int&gt;
+##  1 &quot;SENSE AND SENSIBILITY&quot; Sense &amp; Sensibility          1       0
+##  2 &quot;&quot;                      Sense &amp; Sensibility          2       0
+##  3 &quot;by Jane Austen&quot;        Sense &amp; Sensibility          3       0
+##  4 &quot;&quot;                      Sense &amp; Sensibility          4       0
+##  5 &quot;(1811)&quot;                Sense &amp; Sensibility          5       0
+##  6 &quot;&quot;                      Sense &amp; Sensibility          6       0
+##  7 &quot;&quot;                      Sense &amp; Sensibility          7       0
+##  8 &quot;&quot;                      Sense &amp; Sensibility          8       0
+##  9 &quot;&quot;                      Sense &amp; Sensibility          9       0
+## 10 &quot;CHAPTER 1&quot;             Sense &amp; Sensibility         10       1
+## # … with 73,412 more rows</code></pre>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="the-tidy-text-format.html#cb23-1" aria-hidden="true" tabindex="-1"></a>tidy_books <span class="ot">&lt;-</span> original_books <span class="sc">%&gt;%</span></span>
+<span id="cb23-2"><a href="the-tidy-text-format.html#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_tokens</span>(word, text)</span>
+<span id="cb23-3"><a href="the-tidy-text-format.html#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="the-tidy-text-format.html#cb23-4" aria-hidden="true" tabindex="-1"></a>tidy_books</span></code></pre></div>
+<pre><code>## # A tibble: 725,055 x 4
+##    book                linenumber chapter word       
+##    &lt;fct&gt;                    &lt;int&gt;   &lt;int&gt; &lt;chr&gt;      
+##  1 Sense &amp; Sensibility          1       0 sense      
+##  2 Sense &amp; Sensibility          1       0 and        
+##  3 Sense &amp; Sensibility          1       0 sensibility
+##  4 Sense &amp; Sensibility          3       0 by         
+##  5 Sense &amp; Sensibility          3       0 jane       
+##  6 Sense &amp; Sensibility          3       0 austen     
+##  7 Sense &amp; Sensibility          5       0 1811       
+##  8 Sense &amp; Sensibility         10       1 chapter    
+##  9 Sense &amp; Sensibility         10       1 1          
+## 10 Sense &amp; Sensibility         13       1 the        
+## # … with 725,045 more rows</code></pre>
+<p>Now that the data is in one-word-per-row format, we can do some text analysis, such as removing <code>stop words</code>. We can remove the stop words using <code>anti_join()</code> as shown below:</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="the-tidy-text-format.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(stop_words)</span>
+<span id="cb25-2"><a href="the-tidy-text-format.html#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-3"><a href="the-tidy-text-format.html#cb25-3" aria-hidden="true" tabindex="-1"></a>tidy_books <span class="ot">&lt;-</span> tidy_books <span class="sc">%&gt;%</span></span>
+<span id="cb25-4"><a href="the-tidy-text-format.html#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">anti_join</span>(stop_words)</span></code></pre></div>
+<pre><code>## Joining, by = &quot;word&quot;</code></pre>
+<blockquote>
+<p>The stop_words dataset in the <code>tidytext package</code> contains stop words from three lexicons. We can use them all together, as we have here, or filter() to only use one set of stop words if that is more appropriate for a certain analysis.</p>
+</blockquote>
+<div id="counting-most-common-words" class="section level4" number="3.0.6.1">
+<h4><span class="header-section-number">3.0.6.1</span> Counting most common words</h4>
+<p>We canuse dplyr’s count() to find the most common words in all the books as a whole.</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="the-tidy-text-format.html#cb27-1" aria-hidden="true" tabindex="-1"></a>tidy_books <span class="sc">%&gt;%</span> </span>
+<span id="cb27-2"><a href="the-tidy-text-format.html#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(word , <span class="at">sort =</span>  <span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## # A tibble: 13,914 x 2
+##    word       n
+##    &lt;chr&gt;  &lt;int&gt;
+##  1 miss    1855
+##  2 time    1337
+##  3 fanny    862
+##  4 dear     822
+##  5 lady     817
+##  6 sir      806
+##  7 day      797
+##  8 emma     787
+##  9 sister   727
+## 10 house    699
+## # … with 13,904 more rows</code></pre>
+<p>Again, we can use ggplot here to plot the word distribution as obtain above:</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="the-tidy-text-format.html#cb29-1" aria-hidden="true" tabindex="-1"></a>tidy_books <span class="sc">%&gt;%</span> </span>
+<span id="cb29-2"><a href="the-tidy-text-format.html#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(word , <span class="at">sort =</span>  <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb29-3"><a href="the-tidy-text-format.html#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>( n <span class="sc">&gt;</span> <span class="dv">600</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb29-4"><a href="the-tidy-text-format.html#cb29-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">words =</span> <span class="fu">reorder</span>(word , n)) <span class="sc">%&gt;%</span> </span>
+<span id="cb29-5"><a href="the-tidy-text-format.html#cb29-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(word, n))<span class="sc">+</span></span>
+<span id="cb29-6"><a href="the-tidy-text-format.html#cb29-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>()<span class="sc">+</span></span>
+<span id="cb29-7"><a href="the-tidy-text-format.html#cb29-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="cn">NULL</span>) </span></code></pre></div>
+<p><img src="Reseach-Book_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p>we can flip the cordinate using <code>coord_flip()</code> to show the graph in better way:</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="the-tidy-text-format.html#cb30-1" aria-hidden="true" tabindex="-1"></a>tidy_books <span class="sc">%&gt;%</span> </span>
+<span id="cb30-2"><a href="the-tidy-text-format.html#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(word , <span class="at">sort =</span>  <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb30-3"><a href="the-tidy-text-format.html#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>( n <span class="sc">&gt;</span> <span class="dv">600</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb30-4"><a href="the-tidy-text-format.html#cb30-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">words =</span> <span class="fu">reorder</span>(word , n)) <span class="sc">%&gt;%</span> </span>
+<span id="cb30-5"><a href="the-tidy-text-format.html#cb30-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(word, n))<span class="sc">+</span></span>
+<span id="cb30-6"><a href="the-tidy-text-format.html#cb30-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>()<span class="sc">+</span></span>
+<span id="cb30-7"><a href="the-tidy-text-format.html#cb30-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="cn">NULL</span>)<span class="sc">+</span></span>
+<span id="cb30-8"><a href="the-tidy-text-format.html#cb30-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code></pre></div>
+<p><img src="Reseach-Book_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+</div>
+</div>
+<div id="the-gutenbergr-package" class="section level2 unnumbered">
+<h2>1.4 The gutenbergr package</h2>
+<p>The gutenbergr package provides access to the public domain works from the Project Gutenberg collection. The package includes tools both for downloading books (stripping out the unhelpful header/footer information), and a complete dataset of Project Gutenberg metadata that can be used to find works of interest.</p>
+<p>The function <code>gutenberg_download()</code> downloads one or more works from Project Gutenberg by ID. Other functions are available that you can explore metadata, pair Gutenberg ID with title, author, language, etc., or gather information about authors.</p>
+</div>
+<div id="word-frequencies" class="section level2 unnumbered">
+<h2>1.5 Word frequencies</h2>
+<p>A common task in text mining is to look at word frequencie. We will explore that is this section using science fiction and fantasy novels by H.G. Wells, who lived in the late 19th and early 20th centuries.</p>
+<p>Lets start with the book these four books: <code>The Time Machine, The War of the Worlds, The Invisible Man, and The Island of Doctor Moreau</code> and download them using the <code>gutenberg_download()</code> and the Project Gutenberg ID numbers for each novel as shown below:</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="the-tidy-text-format.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gutenbergr)</span>
+<span id="cb31-2"><a href="the-tidy-text-format.html#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="the-tidy-text-format.html#cb31-3" aria-hidden="true" tabindex="-1"></a>hgwells <span class="ot">&lt;-</span> <span class="fu">gutenberg_download</span>(<span class="fu">c</span>(<span class="dv">35</span>, <span class="dv">36</span>, <span class="dv">5230</span>, <span class="dv">159</span>))</span></code></pre></div>
+<p>Tidytexting and removing stop words</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="the-tidy-text-format.html#cb32-1" aria-hidden="true" tabindex="-1"></a>tidy_hgwells <span class="ot">&lt;-</span> hgwells <span class="sc">%&gt;%</span></span>
+<span id="cb32-2"><a href="the-tidy-text-format.html#cb32-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_tokens</span>(word, text) <span class="sc">%&gt;%</span></span>
+<span id="cb32-3"><a href="the-tidy-text-format.html#cb32-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">anti_join</span>(stop_words)</span></code></pre></div>
+<pre><code>## Joining, by = &quot;word&quot;</code></pre>
+<p>Most common words</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="the-tidy-text-format.html#cb34-1" aria-hidden="true" tabindex="-1"></a>tidy_hgwells <span class="sc">%&gt;%</span> </span>
+<span id="cb34-2"><a href="the-tidy-text-format.html#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(word, <span class="at">sort =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## # A tibble: 11,769 x 2
+##    word       n
+##    &lt;chr&gt;  &lt;int&gt;
+##  1 time     454
+##  2 people   302
+##  3 door     260
+##  4 heard    249
+##  5 black    232
+##  6 stood    229
+##  7 white    222
+##  8 hand     218
+##  9 kemp     213
+## 10 eyes     210
+## # … with 11,759 more rows</code></pre>
+<p>Another works:</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="the-tidy-text-format.html#cb36-1" aria-hidden="true" tabindex="-1"></a>bronte <span class="ot">&lt;-</span> <span class="fu">gutenberg_download</span>(<span class="fu">c</span>(<span class="dv">1260</span>, <span class="dv">768</span>, <span class="dv">969</span>, <span class="dv">9182</span>, <span class="dv">767</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="the-tidy-text-format.html#cb37-1" aria-hidden="true" tabindex="-1"></a>tidy_bronte <span class="ot">&lt;-</span> bronte <span class="sc">%&gt;%</span></span>
+<span id="cb37-2"><a href="the-tidy-text-format.html#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_tokens</span>(word, text) <span class="sc">%&gt;%</span></span>
+<span id="cb37-3"><a href="the-tidy-text-format.html#cb37-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">anti_join</span>(stop_words)</span></code></pre></div>
+<pre><code>## Joining, by = &quot;word&quot;</code></pre>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="the-tidy-text-format.html#cb39-1" aria-hidden="true" tabindex="-1"></a>tidy_bronte <span class="sc">%&gt;%</span></span>
+<span id="cb39-2"><a href="the-tidy-text-format.html#cb39-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(word, <span class="at">sort =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## # A tibble: 23,050 x 2
+##    word       n
+##    &lt;chr&gt;  &lt;int&gt;
+##  1 time    1065
+##  2 miss     855
+##  3 day      827
+##  4 hand     768
+##  5 eyes     713
+##  6 night    647
+##  7 heart    638
+##  8 looked   601
+##  9 door     592
+## 10 half     586
+## # … with 23,040 more rows</code></pre>
+<p>Calculating the frequency for each word for the works of Jane Austen, the Brontë sisters, and H.G. Wells by binding the data frames together.</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="the-tidy-text-format.html#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb41-2"><a href="the-tidy-text-format.html#cb41-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-3"><a href="the-tidy-text-format.html#cb41-3" aria-hidden="true" tabindex="-1"></a>frequency <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(<span class="fu">mutate</span>(tidy_bronte, <span class="at">author =</span> <span class="st">&quot;Brontë Sisters&quot;</span>),</span>
+<span id="cb41-4"><a href="the-tidy-text-format.html#cb41-4" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">mutate</span>(tidy_hgwells, <span class="at">author =</span> <span class="st">&quot;H.G. Wells&quot;</span>), </span>
+<span id="cb41-5"><a href="the-tidy-text-format.html#cb41-5" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">mutate</span>(tidy_books, <span class="at">author =</span> <span class="st">&quot;Jane Austen&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb41-6"><a href="the-tidy-text-format.html#cb41-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">word =</span> <span class="fu">str_extract</span>(word, <span class="st">&quot;[a-z&#39;]+&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb41-7"><a href="the-tidy-text-format.html#cb41-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(author, word) <span class="sc">%&gt;%</span></span>
+<span id="cb41-8"><a href="the-tidy-text-format.html#cb41-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(author) <span class="sc">%&gt;%</span></span>
+<span id="cb41-9"><a href="the-tidy-text-format.html#cb41-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">proportion =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)) <span class="sc">%&gt;%</span> </span>
+<span id="cb41-10"><a href="the-tidy-text-format.html#cb41-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>n) <span class="sc">%&gt;%</span> </span>
+<span id="cb41-11"><a href="the-tidy-text-format.html#cb41-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">spread</span>(author, proportion) <span class="sc">%&gt;%</span> </span>
+<span id="cb41-12"><a href="the-tidy-text-format.html#cb41-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gather</span>(author, proportion, <span class="st">`</span><span class="at">Brontë Sisters</span><span class="st">`</span><span class="sc">:</span><span class="st">`</span><span class="at">H.G. Wells</span><span class="st">`</span>)</span></code></pre></div>
+<p>We use str_extract() here because the UTF-8 encoded texts from Project Gutenberg have some examples of words with underscores around them to indicate emphasis (like italics). The tokenizer treated these as words, but we don’t want to count “<em>any</em>” separately from “any” as we saw in our initial data exploration before choosing to use str_extract()</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="the-tidy-text-format.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
+<span id="cb42-2"><a href="the-tidy-text-format.html#cb42-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-3"><a href="the-tidy-text-format.html#cb42-3" aria-hidden="true" tabindex="-1"></a><span class="co"># expect a warning about rows with missing values being removed</span></span>
+<span id="cb42-4"><a href="the-tidy-text-format.html#cb42-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(frequency, <span class="fu">aes</span>(<span class="at">x =</span> proportion, <span class="at">y =</span> <span class="st">`</span><span class="at">Jane Austen</span><span class="st">`</span>, <span class="at">color =</span> <span class="fu">abs</span>(<span class="st">`</span><span class="at">Jane Austen</span><span class="st">`</span> <span class="sc">-</span> proportion))) <span class="sc">+</span></span>
+<span id="cb42-5"><a href="the-tidy-text-format.html#cb42-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="at">color =</span> <span class="st">&quot;gray40&quot;</span>, <span class="at">lty =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb42-6"><a href="the-tidy-text-format.html#cb42-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">alpha =</span> <span class="fl">0.1</span>, <span class="at">size =</span> <span class="fl">2.5</span>, <span class="at">width =</span> <span class="fl">0.3</span>, <span class="at">height =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb42-7"><a href="the-tidy-text-format.html#cb42-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> word), <span class="at">check_overlap =</span> <span class="cn">TRUE</span>, <span class="at">vjust =</span> <span class="fl">1.5</span>) <span class="sc">+</span></span>
+<span id="cb42-8"><a href="the-tidy-text-format.html#cb42-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>(<span class="at">labels =</span> <span class="fu">percent_format</span>()) <span class="sc">+</span></span>
+<span id="cb42-9"><a href="the-tidy-text-format.html#cb42-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_log10</span>(<span class="at">labels =</span> <span class="fu">percent_format</span>()) <span class="sc">+</span></span>
+<span id="cb42-10"><a href="the-tidy-text-format.html#cb42-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_gradient</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.001</span>), <span class="at">low =</span> <span class="st">&quot;darkslategray4&quot;</span>, <span class="at">high =</span> <span class="st">&quot;gray75&quot;</span>) <span class="sc">+</span></span>
+<span id="cb42-11"><a href="the-tidy-text-format.html#cb42-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>author, <span class="at">ncol =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb42-12"><a href="the-tidy-text-format.html#cb42-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position=</span><span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
+<span id="cb42-13"><a href="the-tidy-text-format.html#cb42-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">&quot;Jane Austen&quot;</span>, <span class="at">x =</span> <span class="cn">NULL</span>)</span></code></pre></div>
+<pre><code>## Warning: Removed 41357 rows containing missing values (geom_point).</code></pre>
+<pre><code>## Warning: Removed 41359 rows containing missing values (geom_text).</code></pre>
+<p><img src="Reseach-Book_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<p>TODO:</p>
+<p>Come back and re-read again the section from <code>1.5 Word frequencies</code></p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="tf-idf.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="tidytext.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>

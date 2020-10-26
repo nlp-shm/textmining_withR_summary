@@ -1,0 +1,12 @@
+about-this-summary-book
+tidytext
+chapter-take-away
+the-tidy-text-format
+sentences
+word
+chapter
+by-n-gram
+tri-gram
+character_-shingles-defined-character
+counting-most-common-words
+text-mining-with-r-a-tidy-model-approach

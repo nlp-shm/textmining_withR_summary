@@ -1,5 +1,5 @@
 --- 
-title: "Research Book "
+title: "Text mining with R: Shmuhammd Summary "
 author: "Shamsuddeen Muhammad"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -7,11 +7,12 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "This is my daily research book for analysis and documentation"
+description: "Study summary of the book text mining with R"
 ---
 
-# About this Summary Book
+# Text mining with R : A Tidy Model Approach
 
- <!-- Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`. --> 
+This book uses tidy data principle for (text mining using)[https://www.tidytextmining.com/] an R package called tidytext by Julia Silge and David Robinson.
 
-My PhD Research book documentation
+I used to read books passively, but I realised I dont realy engaged with the contents. I therefore, decided to summarize all the books I read, that way, I will fully engaged with contents of the book and practice all the code and ideas in the boook.
+ 
